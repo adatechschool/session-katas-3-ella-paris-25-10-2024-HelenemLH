@@ -48,6 +48,6 @@ const url = 'https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/po
 fetchPokemonData(url)
     .then(pokemons => {
         displayPokemonStats(pokemons);
-        displayEvolutions('Bulbasaur', pokemons); // change 'Bulbasaur' to any pokémon
+        displayEvolutions('Pikachu', pokemons);
     })
     .catch(error => console.error('Error loading data:', error));
