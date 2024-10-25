@@ -27,17 +27,19 @@ function displayEvolutions(pokemonName, pokemons) {
     console.log(`Possible evolutions for ${pokemonName}:`);
     const pokemon = pokemons.find(p => p.name.toLowerCase() === pokemonName.toLowerCase());
     if (!pokemon) {
-        console.log(`Pokémon ${pokemonName} not found.`);
+    console.log(`Pokémon ${pokemonName} not found.`);
         return;
     }
 
     const evolutions = pokemon.next_evolution || [];
     if (evolutions.length > 0) {
-        console.log(evolutions.map(e => e.name).join(" -> "));
+    console.log(evolutions.map(e => e.name).join(" -> "));
     } else {
-        console.log(`${pokemonName} has no evolutions.`);
+    console.log(`${pokemonName} has no evolutions.`);
     }
 }
+
+
 
 // URL pokémon JSON 
 const url = 'https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json';
